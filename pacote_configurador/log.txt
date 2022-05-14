@@ -1,0 +1,110 @@
+[36m2022-03-30 16:59:38.265 UTC [bccsp] GetDefault -> DEBU 001[0m Before using BCCSP, please call InitFactories(). Falling back to bootBCCSP.
+[36m2022-03-30 16:59:38.281 UTC [bccsp] GetDefault -> DEBU 002[0m Before using BCCSP, please call InitFactories(). Falling back to bootBCCSP.
+[36m2022-03-30 16:59:38.283 UTC [bccsp_sw] openKeyStore -> DEBU 003[0m KeyStore opened at [/var/hyperledger/users/Admin@org1.example.com/msp/keystore]...done
+[36m2022-03-30 16:59:38.283 UTC [msp] getPemMaterialFromDir -> DEBU 004[0m Reading directory /var/hyperledger/users/Admin@org1.example.com/msp/signcerts
+[36m2022-03-30 16:59:38.283 UTC [msp] getPemMaterialFromDir -> DEBU 005[0m Inspecting file /var/hyperledger/users/Admin@org1.example.com/msp/signcerts/Admin@org1.example.com-cert.pem
+[36m2022-03-30 16:59:38.284 UTC [msp] getPemMaterialFromDir -> DEBU 006[0m Reading directory /var/hyperledger/users/Admin@org1.example.com/msp/cacerts
+[36m2022-03-30 16:59:38.284 UTC [msp] getPemMaterialFromDir -> DEBU 007[0m Inspecting file /var/hyperledger/users/Admin@org1.example.com/msp/cacerts/ca.org1.example.com-cert.pem
+[36m2022-03-30 16:59:38.284 UTC [msp] getPemMaterialFromDir -> DEBU 008[0m Reading directory /var/hyperledger/users/Admin@org1.example.com/msp/admincerts
+[36m2022-03-30 16:59:38.284 UTC [msp] getPemMaterialFromDir -> DEBU 009[0m Reading directory /var/hyperledger/users/Admin@org1.example.com/msp/intermediatecerts
+[36m2022-03-30 16:59:38.284 UTC [msp] getMspConfig -> DEBU 00a[0m Intermediate certs folder not found at [/var/hyperledger/users/Admin@org1.example.com/msp/intermediatecerts]. Skipping. [stat /var/hyperledger/users/Admin@org1.example.com/msp/intermediatecerts: no such file or directory]
+[36m2022-03-30 16:59:38.284 UTC [msp] getPemMaterialFromDir -> DEBU 00b[0m Reading directory /var/hyperledger/users/Admin@org1.example.com/msp/tlscacerts
+[36m2022-03-30 16:59:38.285 UTC [msp] getPemMaterialFromDir -> DEBU 00c[0m Inspecting file /var/hyperledger/users/Admin@org1.example.com/msp/tlscacerts/tlsca.org1.example.com-cert.pem
+[36m2022-03-30 16:59:38.285 UTC [msp] getPemMaterialFromDir -> DEBU 00d[0m Reading directory /var/hyperledger/users/Admin@org1.example.com/msp/tlsintermediatecerts
+[36m2022-03-30 16:59:38.285 UTC [msp] getMspConfig -> DEBU 00e[0m TLS intermediate certs folder not found at [/var/hyperledger/users/Admin@org1.example.com/msp/tlsintermediatecerts]. Skipping. [stat /var/hyperledger/users/Admin@org1.example.com/msp/tlsintermediatecerts: no such file or directory]
+[36m2022-03-30 16:59:38.285 UTC [msp] getPemMaterialFromDir -> DEBU 00f[0m Reading directory /var/hyperledger/users/Admin@org1.example.com/msp/crls
+[36m2022-03-30 16:59:38.285 UTC [msp] getMspConfig -> DEBU 010[0m crls folder not found at [/var/hyperledger/users/Admin@org1.example.com/msp/crls]. Skipping. [stat /var/hyperledger/users/Admin@org1.example.com/msp/crls: no such file or directory]
+[36m2022-03-30 16:59:38.285 UTC [msp] getMspConfig -> DEBU 011[0m Loading NodeOUs
+[36m2022-03-30 16:59:38.286 UTC [msp] newBccspMsp -> DEBU 012[0m Creating BCCSP-based MSP instance
+[36m2022-03-30 16:59:38.286 UTC [msp] New -> DEBU 013[0m Creating Cache-MSP instance
+[36m2022-03-30 16:59:38.286 UTC [msp] loadLocalMSP -> DEBU 014[0m Created new local MSP
+[36m2022-03-30 16:59:38.287 UTC [msp] Setup -> DEBU 015[0m Setting up MSP instance Org1MSP
+[36m2022-03-30 16:59:38.288 UTC [msp.identity] newIdentity -> DEBU 016[0m Creating identity instance for cert -----BEGIN CERTIFICATE-----
+MIICUTCCAfigAwIBAgIRAKtmpPr8HYZzTK2WhVJIUsIwCgYIKoZIzj0EAwIwczEL
+MAkGA1UEBhMCVVMxEzARBgNVBAgTCkNhbGlmb3JuaWExFjAUBgNVBAcTDVNhbiBG
+cmFuY2lzY28xGTAXBgNVBAoTEG9yZzEuZXhhbXBsZS5jb20xHDAaBgNVBAMTE2Nh
+Lm9yZzEuZXhhbXBsZS5jb20wHhcNMjIwMzMwMTY0ODAwWhcNMzIwMzI3MTY0ODAw
+WjBzMQswCQYDVQQGEwJVUzETMBEGA1UECBMKQ2FsaWZvcm5pYTEWMBQGA1UEBxMN
+U2FuIEZyYW5jaXNjbzEZMBcGA1UEChMQb3JnMS5leGFtcGxlLmNvbTEcMBoGA1UE
+AxMTY2Eub3JnMS5leGFtcGxlLmNvbTBZMBMGByqGSM49AgEGCCqGSM49AwEHA0IA
+BAU+Xallbd+2atOOmr7vBSNLHCEkeOJ51/fJX7N0sZsVeJjQVDjYd6qjNulSW55F
+/+LCU5UDPisAwWfaGjsK3tmjbTBrMA4GA1UdDwEB/wQEAwIBpjAdBgNVHSUEFjAU
+BggrBgEFBQcDAgYIKwYBBQUHAwEwDwYDVR0TAQH/BAUwAwEB/zApBgNVHQ4EIgQg
+gsQYabwdDWEaVho+biqN3fw0iU4AP6UZOoOUK8FfUaswCgYIKoZIzj0EAwIDRwAw
+RAIgPA2js80Z4pfz/sk9xb9xxGOsHgUsuObIF7ArPLEToHkCIEr0bXjr4dwT8zbT
+Niuqt3K4RNX5l4jXEHhqKIKENJtF
+-----END CERTIFICATE-----
+[36m2022-03-30 16:59:38.289 UTC [msp.identity] newIdentity -> DEBU 017[0m Creating identity instance for cert -----BEGIN CERTIFICATE-----
+MIICKTCCAc+gAwIBAgIQBb7VmDN9ggP3idGwrv5kQjAKBggqhkjOPQQDAjBzMQsw
+CQYDVQQGEwJVUzETMBEGA1UECBMKQ2FsaWZvcm5pYTEWMBQGA1UEBxMNU2FuIEZy
+YW5jaXNjbzEZMBcGA1UEChMQb3JnMS5leGFtcGxlLmNvbTEcMBoGA1UEAxMTY2Eu
+b3JnMS5leGFtcGxlLmNvbTAeFw0yMjAzMzAxNjQ4MDBaFw0zMjAzMjcxNjQ4MDBa
+MGsxCzAJBgNVBAYTAlVTMRMwEQYDVQQIEwpDYWxpZm9ybmlhMRYwFAYDVQQHEw1T
+YW4gRnJhbmNpc2NvMQ4wDAYDVQQLEwVhZG1pbjEfMB0GA1UEAwwWQWRtaW5Ab3Jn
+MS5leGFtcGxlLmNvbTBZMBMGByqGSM49AgEGCCqGSM49AwEHA0IABOnJh3XQ/62l
+AIA1jq9On1cOLcolGB4pYQU0Lw5cu/oVP21scK1DI7uff2CC67A3DGY726e6x76+
+xe/fE4/mvUKjTTBLMA4GA1UdDwEB/wQEAwIHgDAMBgNVHRMBAf8EAjAAMCsGA1Ud
+IwQkMCKAIILEGGm8HQ1hGlYaPm4qjd38NIlOAD+lGTqDlCvBX1GrMAoGCCqGSM49
+BAMCA0gAMEUCIQDWYkEV2bEHYFjIAYwPR6J1T0YbbQHC0YCXJ1lxYKZKTwIgCZL2
+XWgNMloskfwAk99TkQMGMsR5f98CBCDsL/44ZbA=
+-----END CERTIFICATE-----
+[36m2022-03-30 16:59:38.290 UTC [msp.identity] newIdentity -> DEBU 018[0m Creating identity instance for cert -----BEGIN CERTIFICATE-----
+MIICKTCCAc+gAwIBAgIQBb7VmDN9ggP3idGwrv5kQjAKBggqhkjOPQQDAjBzMQsw
+CQYDVQQGEwJVUzETMBEGA1UECBMKQ2FsaWZvcm5pYTEWMBQGA1UEBxMNU2FuIEZy
+YW5jaXNjbzEZMBcGA1UEChMQb3JnMS5leGFtcGxlLmNvbTEcMBoGA1UEAxMTY2Eu
+b3JnMS5leGFtcGxlLmNvbTAeFw0yMjAzMzAxNjQ4MDBaFw0zMjAzMjcxNjQ4MDBa
+MGsxCzAJBgNVBAYTAlVTMRMwEQYDVQQIEwpDYWxpZm9ybmlhMRYwFAYDVQQHEw1T
+YW4gRnJhbmNpc2NvMQ4wDAYDVQQLEwVhZG1pbjEfMB0GA1UEAwwWQWRtaW5Ab3Jn
+MS5leGFtcGxlLmNvbTBZMBMGByqGSM49AgEGCCqGSM49AwEHA0IABOnJh3XQ/62l
+AIA1jq9On1cOLcolGB4pYQU0Lw5cu/oVP21scK1DI7uff2CC67A3DGY726e6x76+
+xe/fE4/mvUKjTTBLMA4GA1UdDwEB/wQEAwIHgDAMBgNVHRMBAf8EAjAAMCsGA1Ud
+IwQkMCKAIILEGGm8HQ1hGlYaPm4qjd38NIlOAD+lGTqDlCvBX1GrMAoGCCqGSM49
+BAMCA0gAMEUCIQDWYkEV2bEHYFjIAYwPR6J1T0YbbQHC0YCXJ1lxYKZKTwIgCZL2
+XWgNMloskfwAk99TkQMGMsR5f98CBCDsL/44ZbA=
+-----END CERTIFICATE-----
+[36m2022-03-30 16:59:38.290 UTC [msp] setupSigningIdentity -> DEBU 019[0m Signing identity expires at 2032-03-27 16:48:00 +0000 UTC
+[36m2022-03-30 16:59:38.292 UTC [msp] GetDefaultSigningIdentity -> DEBU 01a[0m Obtaining default signing identity
+[36m2022-03-30 16:59:38.292 UTC [grpc] InfoDepth -> DEBU 01b[0m [core]parsed scheme: ""
+[36m2022-03-30 16:59:38.293 UTC [grpc] InfoDepth -> DEBU 01c[0m [core]scheme "" not registered, fallback to default scheme
+[36m2022-03-30 16:59:38.293 UTC [grpc] InfoDepth -> DEBU 01d[0m [core]ccResolverWrapper: sending update to cc: {[{peer0.org1.example.com:7051  <nil> 0 <nil>}] <nil> <nil>}
+[36m2022-03-30 16:59:38.293 UTC [grpc] InfoDepth -> DEBU 01e[0m [core]ClientConn switching balancer to "pick_first"
+[36m2022-03-30 16:59:38.293 UTC [grpc] InfoDepth -> DEBU 01f[0m [core]Channel switches to new LB policy "pick_first"
+[36m2022-03-30 16:59:38.293 UTC [grpc] InfoDepth -> DEBU 020[0m [core]Subchannel Connectivity change to CONNECTING
+[36m2022-03-30 16:59:38.294 UTC [grpc] InfoDepth -> DEBU 021[0m [core]Subchannel picks a new address "peer0.org1.example.com:7051" to connect
+[36m2022-03-30 16:59:38.294 UTC [grpc] InfoDepth -> DEBU 022[0m [core]pickfirstBalancer: UpdateSubConnState: 0xc000115240, {CONNECTING <nil>}
+[36m2022-03-30 16:59:38.294 UTC [grpc] InfoDepth -> DEBU 023[0m [core]Channel Connectivity change to CONNECTING
+[36m2022-03-30 16:59:38.296 UTC [grpc] InfoDepth -> DEBU 024[0m [core]Subchannel Connectivity change to READY
+[36m2022-03-30 16:59:38.296 UTC [grpc] InfoDepth -> DEBU 025[0m [core]pickfirstBalancer: UpdateSubConnState: 0xc000115240, {READY <nil>}
+[36m2022-03-30 16:59:38.296 UTC [grpc] InfoDepth -> DEBU 026[0m [core]Channel Connectivity change to READY
+[36m2022-03-30 16:59:38.296 UTC [grpc] InfoDepth -> DEBU 027[0m [core]parsed scheme: ""
+[36m2022-03-30 16:59:38.296 UTC [grpc] InfoDepth -> DEBU 028[0m [core]scheme "" not registered, fallback to default scheme
+[36m2022-03-30 16:59:38.296 UTC [grpc] InfoDepth -> DEBU 029[0m [core]ccResolverWrapper: sending update to cc: {[{peer0.org1.example.com:7051  <nil> 0 <nil>}] <nil> <nil>}
+[36m2022-03-30 16:59:38.296 UTC [grpc] InfoDepth -> DEBU 02a[0m [core]ClientConn switching balancer to "pick_first"
+[36m2022-03-30 16:59:38.296 UTC [grpc] InfoDepth -> DEBU 02b[0m [core]Channel switches to new LB policy "pick_first"
+[36m2022-03-30 16:59:38.296 UTC [grpc] InfoDepth -> DEBU 02c[0m [core]Subchannel Connectivity change to CONNECTING
+[36m2022-03-30 16:59:38.296 UTC [grpc] InfoDepth -> DEBU 02d[0m [core]Subchannel picks a new address "peer0.org1.example.com:7051" to connect
+[36m2022-03-30 16:59:38.296 UTC [grpc] InfoDepth -> DEBU 02e[0m [core]pickfirstBalancer: UpdateSubConnState: 0xc000115ff0, {CONNECTING <nil>}
+[36m2022-03-30 16:59:38.297 UTC [grpc] InfoDepth -> DEBU 02f[0m [core]Subchannel Connectivity change to READY
+[36m2022-03-30 16:59:38.296 UTC [grpc] InfoDepth -> DEBU 030[0m [core]Channel Connectivity change to CONNECTING
+[36m2022-03-30 16:59:38.298 UTC [grpc] InfoDepth -> DEBU 031[0m [core]pickfirstBalancer: UpdateSubConnState: 0xc000115ff0, {READY <nil>}
+[36m2022-03-30 16:59:38.298 UTC [grpc] InfoDepth -> DEBU 032[0m [core]Channel Connectivity change to READY
+[36m2022-03-30 16:59:38.298 UTC [grpc] WarningDepth -> DEBU 033[0m [core]Adjusting keepalive ping interval to minimum period of 10s
+[36m2022-03-30 16:59:38.298 UTC [grpc] InfoDepth -> DEBU 034[0m [core]parsed scheme: ""
+[36m2022-03-30 16:59:38.299 UTC [grpc] InfoDepth -> DEBU 035[0m [core]scheme "" not registered, fallback to default scheme
+[36m2022-03-30 16:59:38.299 UTC [grpc] InfoDepth -> DEBU 036[0m [core]ccResolverWrapper: sending update to cc: {[{192.169.0.9:7050  <nil> 0 <nil>}] <nil> <nil>}
+[36m2022-03-30 16:59:38.299 UTC [grpc] InfoDepth -> DEBU 037[0m [core]ClientConn switching balancer to "pick_first"
+[36m2022-03-30 16:59:38.299 UTC [grpc] InfoDepth -> DEBU 038[0m [core]Channel switches to new LB policy "pick_first"
+[36m2022-03-30 16:59:38.299 UTC [grpc] InfoDepth -> DEBU 039[0m [core]Subchannel Connectivity change to CONNECTING
+[36m2022-03-30 16:59:38.299 UTC [grpc] InfoDepth -> DEBU 03a[0m [core]pickfirstBalancer: UpdateSubConnState: 0xc00006faa0, {CONNECTING <nil>}
+[36m2022-03-30 16:59:38.299 UTC [grpc] InfoDepth -> DEBU 03b[0m [core]Channel Connectivity change to CONNECTING
+[36m2022-03-30 16:59:38.300 UTC [grpc] InfoDepth -> DEBU 03c[0m [core]Subchannel picks a new address "192.169.0.9:7050" to connect
+[36m2022-03-30 16:59:38.303 UTC [grpc] InfoDepth -> DEBU 03d[0m [core]Subchannel Connectivity change to READY
+[36m2022-03-30 16:59:38.303 UTC [grpc] InfoDepth -> DEBU 03e[0m [core]pickfirstBalancer: UpdateSubConnState: 0xc00006faa0, {READY <nil>}
+[36m2022-03-30 16:59:38.303 UTC [grpc] InfoDepth -> DEBU 03f[0m [core]Channel Connectivity change to READY
+[36m2022-03-30 16:59:38.304 UTC [msp.identity] Sign -> DEBU 040[0m Sign: plaintext: 0AC6070A6E08031A0C08FA9892920610...61373462343065376666396630316464 
+[36m2022-03-30 16:59:38.304 UTC [msp.identity] Sign -> DEBU 041[0m Sign: digest: 2CC43213019361D9444FC7A0F8A05957B52E664D8DDBC909F44CD39793A45981 
+[36m2022-03-30 16:59:38.327 UTC [msp.identity] Sign -> DEBU 042[0m Sign: plaintext: 0AC6070A6E08031A0C08FA9892920610...6F20EA3B27BCA6EE9E9EE201FD625E7C 
+[36m2022-03-30 16:59:38.327 UTC [msp.identity] Sign -> DEBU 043[0m Sign: digest: 595432528DB70A4D8D842FC32C369C4497938BA339CA656D57E56FF5B3340529 
+[36m2022-03-30 16:59:38.328 UTC [msp.identity] Sign -> DEBU 044[0m Sign: plaintext: 0AEE060A1608051A0608FA9892920622...00120D1A0B08FFFFFFFFFFFFFFFFFF01 
+[36m2022-03-30 16:59:38.328 UTC [msp.identity] Sign -> DEBU 045[0m Sign: digest: 473D52A4959A6BD92F3A35D97D6EDFD3473A1BAD1C8729173C1F2C20237B252F 
+[34m2022-03-30 16:59:40.429 UTC [chaincodeCmd] ClientWait -> INFO 046[0m txid [2785389c0ee92b2c804a52d075aeffd8b00f4174116c44e3f9dd62bf63150bb0] committed with status (VALID) at peer0.org1.example.com:7051

@@ -1,0 +1,60 @@
+---
+name: fabric
+description: "Arquivo de conexao com a rede"
+version: 2.0.0
+channels:
+  channelall:
+    orderers:
+      - orderer.example.com
+    peers:
+      peer0.org1.example.com:
+        endorsingPeer: true
+        chaincodeQuery: true
+        ledgerQuery: true
+        eventSource: true
+  
+      peer0.org2.example.com:
+        endorsingPeer: true
+        chaincodeQuery: true
+        ledgerQuery: true
+        eventSource: true
+    
+      peer0.org3.example.com:
+        endorsingPeer: false
+        chaincodeQuery: false
+        ledgerQuery: true
+        eventSource: true
+organizations:
+  Org1:
+    mspid: Org1MSP
+    peers:
+      - peer0.org1.example.com
+  Org2:
+    mspid: Org2MSP
+    peers:
+      - peer0.org2.example.com
+  Org3:
+    mspid: Org3MSP
+    peers:
+      - peer0.org3.example.com
+orderers:
+  orderer.example.com: 
+    url: grpc://192.169.0.9:7050  
+    grpcOptions:
+      ssl-target-name-override: orderer.example.com
+peers:
+  peer0.org1.example.com:
+    url: grpc://192.169.0.7:7051
+    grpcOptions:
+      ssl-target-name-override: peer0.org1.example.com
+      request-timeout: 120001 
+  peer0.org2.example.com:
+    url: grpc://192.169.0.10:7051
+    grpcOptions:
+      ssl-target-name-override: peer0.org2.example.com
+      request-timeout: 120001 
+  peer0.org3.example.com:
+    url: grpc://192.169.0.11:7051
+    grpcOptions:
+      ssl-target-name-override: peer0.org3.example.com
+      request-timeout: 120001

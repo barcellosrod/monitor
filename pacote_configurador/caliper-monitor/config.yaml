@@ -1,0 +1,62 @@
+test:
+    name: monitor
+    description: Teste Caliper para a rede de monitor de recursos
+    workers:
+      type: local
+      number: 50
+    rounds:
+      - label: Set
+        description: Insere dados na cadeia.
+        txDuration: 10
+        rateControl: 
+          type: fixed-load
+          opts:
+            transactionLoad: 50
+        workload:
+          module: set.js
+          arguments:
+            contractId: monitor
+      - label: ObterDadosMonitoradosTotais
+        description: Obtem dados de todos os nodos da cadeia.
+        txDuration: 10
+        rateControl: 
+          type: fixed-load
+          opts:
+            transactionLoad: 50
+        workload:
+          module: obterDadosMonitoradosTotais.js
+          arguments:
+            contractId: monitor
+      - label: ObterDadosMonitoradosEquip
+        description: Obtem dados monitorados de determinado equipamento na cadeia.
+        txDuration: 10
+        rateControl: 
+          type: fixed-load
+          opts:
+            transactionLoad: 50
+        workload:
+          module: obterDadosMonitoradosEquip.js
+          arguments:
+            contractId: monitor
+      - label: ObterEquipamentosDados
+        description: Obtem os equipamento de acordo com os parametros de entrada fornecidos.
+        txDuration: 10
+        rateControl: 
+          type: fixed-load
+          opts:
+            transactionLoad: 50
+        workload:
+          module: obterEquipamentosDados.js
+          arguments:
+            contractId: monitor
+      - label: ObterUltimosEstadosEquip
+        description: Obtem os ultimos estados de determinado equipamento.
+        txDuration: 10
+        rateControl: 
+          type: fixed-load
+          opts:
+            transactionLoad: 50
+        workload:
+          module: obterUltimosEstadosEquip.js
+          arguments:
+            contractId: monitor
